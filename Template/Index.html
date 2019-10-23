@@ -47,11 +47,17 @@
         </p>
 
     <!--Creates an ordered list-->
-        <ol>
-        First Item
-        Second Item
+        <ol type="I">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Air</li>
         </ol>
 
+    <!--Creates an unordered list-->
+        <ul>
+            <li>Zero</li>
+            <li>Alfie</li>
+        </ul>
     <!--Creates a line Break-->
         <br>
 
@@ -94,12 +100,70 @@
         </a>
 
     <!--Creates an image from a link-->
-        <img width="160" height="90" src="https://image.freepik.com/free-photo/vacation-wonder-fresh-trees-waterfall-outdoor_1417-1104.jpg" alt="No Image"/>
+        <img width="600" src="https://image.freepik.com/free-photo/vacation-wonder-fresh-trees-waterfall-outdoor_1417-1104.jpg"
+             alt="No Image"/>
 
-    <!-Creates an image link-->
-        <video src="HTML/JavaScript-Navigation/Video.mp4" controls width="600">
+    <!--Creates an Youtube video link-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iYxnIPwhn9w" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
 
-        </video>
+    <!--Creates a table-->
+        <table>
+            <!--Creates the table head-->
+            <thead>
+                <!--Creates a table caption-->
+                <caption>List of Numbers</caption>
+                <!--Creates column names-->
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            <thead>>
 
+            <!--Creates a table body-->
+            <tbody>
+                <!--Creates the first row-->
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+                <!--Creates the second row-->
+                <tr>
+                    <td>four</td>
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            <tbody>
+        </table>
+
+    <!--Creating a container to use to store html-->
+        <!--Creating a inline container-->
+            <span>SpanText</span>
+            <span>SpanTextTo</span>
+
+        <!--Creating a block container-->
+            <div>DivText</div>
+            <div>DivText2</div>
+
+    <!--Creating user inputs-->
+        <input type="text" value="Enter text">
+        <input type="date">
+        <input type="range">
+
+        <input type="submit">
+        <input type="checkbox">
+
+        <textarea rows="25" cols="100">Enter paragraph
+        </textarea>
+
+    <!--Creating a form/ container for inputs-->
+        <form>
+            <input type="week">
+        </form>
     </body>
+
+
 </html>
