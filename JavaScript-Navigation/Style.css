@@ -1,0 +1,45 @@
+html {
+    background: url('https://redsneakers.works/application/files/9415/6865/1401/bigstock-Digital-technology-background--112490207.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.29);
+
+}
+
+ol {
+    padding: 10px;
+    align-content: center;
+}
+
+.wrapper button {
+    color: #000000;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+.wrapper button:hover {
+    background-color: rgba(247, 252, 255, 0.54);
+}
+
+a:link {
+    text-decoration: none;
+}
