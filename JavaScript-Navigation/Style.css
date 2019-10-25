@@ -3,9 +3,8 @@ html {
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-sizing: content-box;
+    justify-content: center;
 
 }
 
@@ -24,7 +23,6 @@ h1 {
 
 ol {
     padding: 10px;
-    align-content: center;
 }
 
 .JSwrapper button {
