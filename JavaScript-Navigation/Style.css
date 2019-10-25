@@ -15,7 +15,7 @@ h1 {
     margin: 0;
 }
 
-.wrapper {
+.JSwrapper {
     padding: 20px;
     background: rgba(255, 255, 255, 0.87);
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.29);
@@ -27,7 +27,7 @@ ol {
     align-content: center;
 }
 
-.wrapper button {
+.JSwrapper button {
     color: #000000;
     padding: 10px 10px;
     cursor: pointer;
@@ -36,7 +36,7 @@ ol {
     width: 100px;
 }
 
-.wrapper button:hover {
+.JSwrapper button:hover {
     background-color: rgba(247, 252, 255, 0.54);
 }
 
