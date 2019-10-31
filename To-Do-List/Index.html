@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <script src="https://kit.fontawesome.com/91b867e3be.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
+    <div class="Container">
+        <input type="text" class="Textbox" placeholder="Add a task">
+        <div class="NotComplete">
+            <h3>Not Complete</h3>
+
+        </div>
+
+        <div class="Complete">
+            <h3>Complete</h3>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(".Textbox").on("keyup",function (e) {
+            if(e.keyCode == 13 && $(".Textbox").val() != "")
+            {
+                let Task = $("<div class='Task'></div>").text($(".Textbox").val());
+                let Delete = $("<i class='far fa-trash-alt'></i>").click(function(){
+                    let Parent = $(this).parent();
+                    Parent.fadeOut(function() {
+                        Parent.remove();
+                    });
+                });
+
+                let Check = $("<i class='fas fa-check'></i>").click(function(){
+                    let Parent = $(this).parent();
+                    Parent.fadeOut(function() {
+                        $(".Complete").append(Parent);
+                        Parent.fadeIn();
+                    });
+                    $(this).remove();
+                });
+
+                Task.append(Delete,Check);
+                $(".NotComplete").append(Task);
+                $(".Textbox").val("");
+            }
+        });
+    </script>
+
 </body>
+
+
 </html>
