@@ -1,0 +1,32 @@
+
+<form action="/todo" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{task._id}}">
+    <div class="form-group">
+        <div class="Container" style="
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;">
+                <input type="text" class="form-control" name="task" placeholder="Update Task" value="{{todo.task}}"style="
+
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid #000000;
+                background: none;
+                padding: 10px;
+                outline: none;
+                font-size: 25px;"/>
+            <div class="text-danger">
+                {{todo.taskError}}
+             </div>
+
+
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
