@@ -7,7 +7,7 @@ const bodyparser = require('body-parser');
 const controller = require('./controllers/controller');
 const app = express();
 
-let PORT = 1111
+let PORT = 1111;
 app.use(bodyparser.urlencoded({
     extended: true
 }));
