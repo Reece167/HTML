@@ -28,8 +28,9 @@ function insertRecord(req, res) {
                     task: req.body
                 });
             }
-            else
+            else {
                 console.log(`Error during record insertion : ${err}`);
+            }
         }
     });
 }
@@ -43,8 +44,9 @@ function updateRecord(req, res) {
                     task: req.body
                 });
             }
-            else
+            else {
                 console.log(`Error during record update : ${err}`);
+            }
         }
     });
 }
