@@ -57,7 +57,7 @@ router.get('/list', (req, res) => {
             });
         }
         else {
-            console.log('Error in retrieving todo list :' + err);
+            console.log(`Error in retrieving todo list : ${err}`);
         }
     });
 });
@@ -77,7 +77,7 @@ router.get('/delete/:id', (req, res) => {
         if (!err) {
             res.redirect('/todo/list');
         }
-        else { console.log('Error in todo delete :' + err); }
+        else { console.log(`Error in todo delete : ${err}`); }
     });
 });
 
