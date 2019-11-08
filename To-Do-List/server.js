@@ -18,6 +18,7 @@ app.set('view engine', 'hbs');
 
 app.listen(PORT, () => {
     console.log(`Express server started at port : ${PORT}`);
+    console.log(`http://localhost:${PORT}/todo/list`);
 });
 
 app.use('/ToDo', controller);
